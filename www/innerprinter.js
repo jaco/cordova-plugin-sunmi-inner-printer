@@ -1,4 +1,4 @@
-exec = require("cordova/exec");
+exec = typeof cordova!=='undefined' ? cordova.exec : _ => {};
 
 module.exports = {
   printerInit: function () {
